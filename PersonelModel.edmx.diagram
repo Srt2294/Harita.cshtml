@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98514d4b5abc46e0b4f947d15b2f0571" Name="Diagram1">
+        <EntityTypeShape EntityType="MikroMiniModel.iller" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_Cihaz" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_Drone" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_Faaliyet" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_IhaTuru" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_Personel" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_PersonelKurs" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_UcusKayit" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MikroMiniModel.Tbl_Admin" Width="1.5" PointX="4.75" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_Drone_iller" ManuallyRouted="false" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_Personel_iller1" ManuallyRouted="false" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_Drone_Tbl_Cihaz" ManuallyRouted="false" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_Drone_Tbl_IhaTuru1" ManuallyRouted="false" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_UcusKayit_Tbl_Drone" ManuallyRouted="false" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_UcusKayit_Tbl_Faaliyet" ManuallyRouted="false" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_Personel_Tbl_Kurs" ManuallyRouted="false" />
+        <AssociationConnector Association="MikroMiniModel.FK_Tbl_Personel_Tbl_PersonelKurs" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

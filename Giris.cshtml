@@ -1,0 +1,32 @@
+﻿@model PersonelTakip.Models.Tbl_Admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Giriş Yap</title>
+</head>
+<body>
+    <h2>Giriş Yap</h2>
+    @using (Html.BeginForm())
+    {
+        <p>Kullanıcı Adı:</p>
+        @Html.TextBoxFor(m => m.AdminSicil, new { @class = "form-control" })
+
+        <p>Şifre:</p>
+        @Html.PasswordFor(m => m.AdminSifre, new { @class = "form-control" })
+
+        <br />
+        <input type="submit" value="Giriş Yap" class="btn btn-primary" />
+    }
+
+    @if (ViewBag.Hata != null)
+    {
+        <p style="color:red;">@ViewBag.Hata</p>
+    }
+</body>
+</html>

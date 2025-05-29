@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Raporlama";
+}
+
+<h2>Raporlama Kriterleri</h2>
+
+
+@using (Html.BeginForm("Sonuc", "Rapor", FormMethod.Post))
+{
+    <label>Şehir:</label>
+    @Html.DropDownList("sehirID", ViewBag.Sehirler as SelectList, "Tümü", new { @class = "form-control" })
+
+    <label>Kurs:</label>
+    @Html.DropDownList("kursID", ViewBag.Kurslar as SelectList, "Tümü", new { @class = "form-control" })
+
+    <label>Rütbe:</label>
+    @Html.DropDownList("rutbe", new SelectList(ViewBag.Rutbeler), "Tümü", new { @class = "form-control" })
+
+    <br />
+    <input type="submit" value="Raporu Görüntüle" class="btn btn-primary" />
+    <p>
+        @Html.ActionLink("PDF Olarak İndir", "PdfRapor", null, new { @class = "btn btn-danger" }) |
+        @Html.ActionLink("Excel Olarak İndir", "ExcelRapor", null, new { @class = "btn btn-success" })
+    </p>
+}

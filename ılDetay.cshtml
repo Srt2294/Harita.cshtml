@@ -1,0 +1,21 @@
+﻿@model IEnumerable<PersonelTakip.Models.Tbl_Personel>
+
+<table class="table table-bordered table-sm">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Rütbe</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.PerAd</td>
+                <td>@p.PerSoyad</td>
+                <td>@p.PerRutbe</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<PersonelTakip.Models.Tbl_Personel>
+
+<h2>Rapor Sonuçları</h2>
+
+<table class="table">
+    <tr>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Rütbe</th>
+        <th>Şehir</th>
+        <th>Kurs</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.PerAd</td>
+            <td>@item.PerSoyad</td>
+            <td>@item.PerRutbe</td>
+            <td>@item.iller.sehir</td>
+            <td>@item.Tbl_PersonelKurs.PersonelKursAd</td>
+        </tr>
+    }
+</table>
